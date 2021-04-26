@@ -36,7 +36,7 @@ const Timetable = (props) => {
             <div className={styles.day}>
                 <div className={`dayHeaders ${styles.dayHeaders}`}>
                     <p className={styles.date}>
-                        <span>TODAY, </span> 
+                        <span>TODAY,</span> 
                         {todaysDate}
                     </p>
                     <p className={styles.earlier}>earlier</p>

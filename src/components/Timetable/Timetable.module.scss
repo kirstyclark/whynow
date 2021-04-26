@@ -21,6 +21,10 @@
             .date {
                 border-bottom: $orange 1px solid;
                 padding-bottom: 5px;
+
+                span {
+                    margin-right: 5px;
+                }
             }
 
             .earlier {
