@@ -1,0 +1,97 @@
+@import '../../assets/styles.scss';
+
+.timetable {
+    margin: 40px;
+
+    .scheduleTitle {
+
+        .radio {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .day {
+
+        .dayHeaders {
+            display: flex;
+            margin-bottom: 20px;
+
+            .date {
+                border-bottom: $orange 1px solid;
+                padding-bottom: 5px;
+            }
+
+            .earlier {
+                padding-bottom: 5px;
+            }
+
+            .earlier:hover {
+                cursor: pointer;
+            }
+        }
+
+        .dayContents {
+            border-top: $white 2px solid;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .timetable {
+        width: 85vw;
+
+        .scheduleTitle {
+
+            .radio {
+                width: 100px;
+            }
+    
+            .schedule {
+                margin: 10px 0;
+            }
+        }
+    
+        .day {
+            margin: 30px 0;
+    
+            .dayHeaders {
+    
+                .date {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .timetable {
+        width: 80vw;
+
+        .scheduleTitle {
+
+            .radio {
+                width: 70px;
+            }
+    
+            .schedule {
+                margin: 5px 0;
+            }
+        }
+    
+        .day {
+            margin: 20px 0;
+    
+            .dayHeaders {
+    
+                .date {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

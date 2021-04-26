@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+$primary-font: 'Open Sans', sans-serif;
+
+$font-xl: 60px;
+$font-l: 35px;
+$font-m: 25px;
+$font-s: 20px;
+$font-xs: 15px;
+$font-xxs: 10px;
+$font-xxxs: 7px;
+
+.app {
+    font-family: $primary-font;
+}
+
+.timetable {
+    color: $white;
+
+    .radio {
+        color: $orange;
+    }
+
+    .dayHeaders {
+        text-transform: uppercase;
+        color: $lite-grey;
+
+        span {
+            color: $white;
+        }
+    }
+}
+
+.show {
+    .showIcon {
+        .play {
+            font-size: $font-l;
+        }
+    }
+}
+
+.player {
+    
+    a {
+        color: $grey;
+    }
+
+    .playerIcons {
+        color: $grey;
+    }
+
+    .trackInfo {
+        h6 {
+            color: $white;
+        }
+
+        p {
+            color: $lite-grey;
+        }
+    }
+
+    .liveIcon {
+        text-transform: uppercase;
+        color: $white;
+
+        .fa {
+            color: $orange;
+        }
+    }
+
+    .length {
+        color: $lite-grey;
+    }
+
+    .mute {
+        color: $lite-grey;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .timetable {
+    
+        .radio {
+            font-size: $font-m;
+    
+            .fa {
+                font-size: $font-xxs;
+            }
+        }
+    
+        .schedule {
+            font-size: $font-xl;
+        }
+    
+        .dayHeaders {
+            font-size: $font-xs;
+        }
+    }
+    
+    .player {
+    
+        .playerIcons {
+            font-size: $font-s;
+            
+            .play {
+                font-size: $font-l;
+                margin: 0 15px;
+            }
+        }
+    
+        .trackInfo {
+            h6 {
+                font-size: $font-xs;
+            }
+        }
+    
+        .liveIcon {
+            .fa {
+                font-size: $font-xxs;
+            }
+        }
+    
+        .length {
+            font-size: $font-xs;
+        }
+    
+        .mute {
+            font-size: $font-m;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .timetable {
+    
+        .radio {
+            font-size: $font-s;
+    
+            .fa {
+                font-size: $font-xxxs;
+            }
+        }
+    
+        .schedule {
+            font-size: $font-l;
+        }
+    
+        .dayHeaders {
+            font-size: $font-xs;
+        }
+    }
+
+    .show {
+        .timeContainer {
+            font-size: $font-xs;
+        }
+    }
+
+    .player {
+    
+        .playerIcons {
+            font-size: $font-xs;
+            
+            .play {
+                font-size: $font-l;
+                margin: 0 10px;
+            }
+        }
+    
+        .trackInfo {
+            h6 {
+                font-size: $font-xxs;
+            }
+        }
+    
+        .liveIcon {
+            .fa {
+                font-size: $font-xxs;
+            }
+        }
+    
+        .length {
+            font-size: $font-xs;
+        }
+    
+        .mute {
+            font-size: $font-m;
+        }
+    }
+}

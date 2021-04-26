@@ -1,0 +1,103 @@
+@import '../../assets/styles.scss';
+
+.show {
+    border-bottom: $grey 1px solid;
+
+    .timeContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .iconContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nameContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .nameContainer:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .show {
+        height: 15vh;
+        display: flex;
+    
+        .timeContainer {
+            margin-left: 2vw;
+            width: 220px;
+        }
+    
+        .iconContainer {
+            width: 80px;
+
+            .showIcon {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                img {
+                    height: 60px;
+                    border-radius: 50px;
+                    border: $lite-grey 1px solid;
+                    position: absolute;
+                    z-index: 1;
+                }
+        
+                .play {
+                    color: $orange;
+                    background-color: $white;
+                    border-radius: 50px;
+                    z-index: 3;
+                    position: absolute;
+                    display: none;
+                }
+            }
+        
+            .showIcon:hover {
+                cursor: pointer;
+        
+                .play {
+                    display: flex;
+                }
+            } 
+        }
+    
+        .nameContainer {
+            width: 500px;
+    
+            h4 {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .show {
+        height: 15vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    
+        .timeContainer {
+            margin-left: 2vw;
+            width: 30vw;
+        }
+    
+        .iconContainer {
+            display: none;
+        }
+    }
+}
